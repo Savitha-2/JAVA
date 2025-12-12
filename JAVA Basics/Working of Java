@@ -1,0 +1,57 @@
+How Java Works
+
+Java is a platform-independent, secure, and memory-managed language.
+
+Here’s how it works step by step:
+
+1️⃣ Write Java Code (.java)
+
+Write your program in a .java file:
+
+class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello Java!");
+    }
+}
+
+
+This is called Source Code.
+
+2️⃣ Compile Code → Bytecode (.class)
+
+Use the Java compiler:
+
+javac Hello.java
+
+
+Creates a .class file
+
+Contains bytecode (platform-independent instructions)
+
+3️⃣ JVM Loads the Bytecode
+
+Run the program:
+
+java Hello
+
+
+JVM (Java Virtual Machine) loads the .class file and prepares it for execution.
+
+Class Loader: Loads code and libraries
+
+Bytecode Verifier: Checks for errors or unsafe code
+
+4️⃣ JVM Converts Bytecode → Machine Code
+
+JVM uses Interpreter + JIT (Just-In-Time) Compiler
+
+Converts bytecode into CPU-understandable machine code
+
+Repeated code is optimized for faster execution
+
+5️⃣ CPU Executes Machine Code
+
+The CPU runs the program
+
+Output is produced on the screen
+
