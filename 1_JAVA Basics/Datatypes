@@ -1,0 +1,35 @@
+Type	  Size	    Range	                            Example
+byte	1 byte	   -128 to 127	                       byte a = 10;
+short	2 bytes	   -32,768 to 32,767	               short s = 500;
+int	    4 bytes	  -2,147,483,648 to 2,147,483,647  	int n = 1000;
+long	8 bytes	    very large	                        long x = 100000L; (notice L)
+float	4 bytes	    decimal (6–7 digits)	            float f = 3.14f;
+double	8 bytes	    decimal (15 digits)	                double d = 3.14159;
+char	2 bytes	    single character	                char c = 'A';
+boolean	1 bit	    true or false	                    boolean flag = true;
+
+
+
+🔹 Integer types
+
+byte, short, int, long
+
+🔹 Floating-point (decimal) types
+
+float, double
+
+🔹 Character type
+
+char
+
+🔹 Boolean type
+
+boolean
+
+
+Literals:
+
+A literal in C is a fixed value that does not change and is written directly in the code.
+
+Example: 10, 'A', 3.14, "Hello" — these are literals.
+
