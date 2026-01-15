@@ -1,0 +1,21 @@
+Method Overloading
+
+
+Method overloading means having multiple methods with the same name in the same class,
+but with different parameter lists.
+
+Java decides which method to call at compile time, 
+so it is an example of compile-time polymorphism.
+
+
+Rules of Method Overloading
+
+Methods must differ by at least one of the following:
+
+* Number of parameters
+
+* Type of parameters
+
+* Order of parameters
+
+❌ Changing only the return type is NOT allowed.
