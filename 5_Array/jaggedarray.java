@@ -8,6 +8,7 @@ public class jaggedarray {
             }
             System.out.println();
         }
+        
 
         
     }
