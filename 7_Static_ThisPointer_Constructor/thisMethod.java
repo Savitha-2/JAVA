@@ -2,22 +2,31 @@ class ThisExample {
     int a;
     int b;
     
-    void setValues(int a, int b) {
-        this.a = a; // 'this' refers to the current object's instance variable
-        this.b = b; // 'this' refers to the current object's instance variable
-    }
+   public ThisExample(){
+       System.out.println("ThisExample Constructor Called");
+   }
+   public ThisExample(int a, int b){
+       this.a = a; // Using 'this' to refer to instance variable
+       this.b = b; // Using 'this' to refer to instance variable
+   }
+}
+class AnotherExample extends ThisExample {
+    int x;
+    int y;
     
-    void display() {
-        System.out.println("Value of a: " + a);
-        System.out.println("Value of b: " + b);
+    public  AnotherExample(){
+        System.out.println("Default constructor of AnotherExample"); 
     }
+    public  AnotherExample(int x, int y){
+        this(); // Calling the default constructor of the same class
+        System.out.println("AnotherExample Constructor Called" +x +"," +y);
+    }
+
 }
 public class thisMethod {
     
     public static void main(String[] args) {
-        ThisExample obj = new ThisExample();
-        obj.setValues(10, 20);
-        obj.display();
+        AnotherExample obj = new AnotherExample(10, 20);
         
     }
 }
